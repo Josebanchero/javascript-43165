@@ -76,6 +76,8 @@ const total = precio.reduce((acumulador, elemento)=> acumulador + elemento, 0)
 alert("Tu total es: " + total)
 console.log(total)
 
+
+
 /* Nav Buscador de Productos */
 
 const busqueda = document.querySelector('.busqueda')
