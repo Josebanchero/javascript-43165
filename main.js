@@ -40,21 +40,25 @@ alert ("Usuario: " + nombreIngresado + apellidoIngresado + edadIngreasada)
 alert ("E-mail: " + emailIngresado)
 alert ("Contraseña: *******")
 
+// Guardado de datos
+
+sessionStorage.setItem('Usuario', 'E-mail', 'Contraseña')
+
 
 
 /* CARRITO */
 /* Productos */
- const productos = [
+const productos = [
     {nombre: "Bandeja Amelia", precio: 5000 },
     {nombre: "Maceta Robert", precio: 4500},
     {nombre: "Bandeja Multiple", precio: 7500},
     
 
- ]
- console.log(productos)
+]
+console.log(productos)
 
- const resultado = productos.find((el) => el.nombre === "Bandeja Amelia")
- const resultado2 = productos.find((el) => el.nombre === "Bandeja Uxi")
+const resultado = productos.find((el) => el.nombre === "Bandeja Amelia")
+const resultado2 = productos.find((el) => el.nombre === "Bandeja Uxi")
 
 console.log(resultado)
 console.log(resultado2)
@@ -71,3 +75,14 @@ const precio = [5000, 4500, 7500]
 const total = precio.reduce((acumulador, elemento)=> acumulador + elemento, 0)
 alert("Tu total es: " + total)
 console.log(total)
+
+/* Nav Buscador de Productos */
+
+const busqueda = document.querySelector('.busqueda')
+busqueda.addEventListener('input', ()=> {
+    console.log('typing...')
+})
+const p = document.querySelector('p')
+busqueda.addEventListener('blur', ()=> {
+    p.textContent = busqueda.value;
+})
