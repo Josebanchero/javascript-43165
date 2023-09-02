@@ -1,0 +1,1890 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cfc0bd;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+body p {
+  color: #596e6b;
+  font-family: "Courier New", Courier, monospace;
+  padding: 2px;
+}
+body .body-inicio .img_princ {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+body .body-inicio .parrafoprinc {
+  color: #596e6b;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 20px;
+  font-size: large;
+  font-weight: 500;
+}
+body .body-inicio .video_inicio {
+  text-align: center;
+}
+body footer {
+  padding: 10px;
+  background-color: #b8b8aa;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-self: baseline;
+}
+body footer .redes {
+  list-style-type: none;
+  display: inline;
+}
+body footer .redes .instagram, body footer .redes .facebook, body footer .redes .youtube, body footer .redes .behance, body footer .redes .linkedin {
+  width: auto;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body h1 {
+  color: #596e6b;
+  margin-top: 90px;
+  text-align: center;
+  padding: 10px;
+}
+body h3, body h4 {
+  font-family: "Courier New", Courier, monospace;
+  color: #596e6b;
+  padding: 10px;
+}
+body .img_extra {
+  width: 200px;
+  border-radius: 20px;
+}
+body .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  gap: 20px;
+  height: 600px;
+  padding: 15px;
+  justify-items: center;
+}
+body .grid-container .grid-item.uno {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body .grid-container .grid-item.uno .jose {
+  width: 200px;
+  border-radius: 20px;
+  align-items: center;
+}
+body .grid-container .grid-item.dos {
+  justify-self: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+body .servicios-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  height: 700px;
+  padding: 15px;
+  justify-content: center;
+  align-content: center;
+}
+body .servicios-container .item-s.uno {
+  justify-self: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+}
+body .servicios-container .item-s.dos {
+  justify-self: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: center;
+}
+body .servicios-container .item-s.tres {
+  justify-self: center;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  text-align: center;
+}
+body .materiales-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  gap: 30px;
+  height: 700px;
+  padding: 15px;
+  justify-content: center;
+  align-content: center;
+}
+body .materiales-container .item-m.uno {
+  justify-self: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+}
+body .materiales-container .item-m.dos {
+  justify-self: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+}
+body .materiales-container .item-m.tres {
+  justify-self: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: center;
+}
+body .materiales-container .item-m.cuatro {
+  justify-self: center;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  text-align: center;
+}
+body .form {
+  text-align: end;
+}
+body .form .contacto-container {
+  display: grid;
+  grid-template-columns: 300px 300px 400px;
+  grid-template-rows: 300px 50px 30px;
+  gap: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-content: center;
+}
+body .form .contacto-container .item-c.uno {
+  justify-self: center;
+  align-self: start;
+  grid-column: 1/3;
+  grid-row: 1/4;
+}
+body .form .contacto-container .item-c.uno .mapa {
+  width: 620px;
+  height: 420px;
+}
+body .form .contacto-container .item-c.dos {
+  justify-self: start;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+body .form .contacto-container .item-c.dos .nombre_form, body .form .contacto-container .item-c.dos .email_form, body .form .contacto-container .item-c.dos .motivo_form, body .form .contacto-container .item-c.dos .texto_form .busqueda {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 5px;
+  color: #596f6b;
+  background: #DDD5D0;
+  font-weight: 600;
+  width: 402px;
+  cursor: text;
+}
+body .form .contacto-container .item-c.dos textarea {
+  color: #596e6b;
+  background: #e3ddd9;
+  font-weight: 600;
+  cursor: text;
+}
+body .form .contacto-container .item-c.tres {
+  justify-self: start;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+body .form .contacto-container .item-c.tres .archivo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  color: #596f6b;
+  font-weight: 600;
+}
+body .form .contacto-container .item-c.tres .adjuntar_archivo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  color: #596f6b;
+  font-weight: 600;
+}
+body .form .contacto-container .item-c.cuatro {
+  justify-self: start;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+body .form .contacto-container .item-c.cuatro .enviar {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  width: 80px;
+  height: 30px;
+  color: #596f6b;
+  background: #DDD5D0;
+  font-weight: 600;
+  border: 0;
+  border-radius: 6px;
+}
+body .form .contacto-container .item-c.cuatro .enviar:hover {
+  background: #596f6b;
+  color: #DDD5D0;
+}
+body .form .contacto-container .item-c.cuatro .borrar {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  width: 130px;
+  height: 30px;
+  color: #596e6b;
+  background: #e3ddd9;
+  font-weight: 600;
+  border: 0;
+  border-radius: 6px;
+}
+body .form .contacto-container .item-c.cuatro .borrar:hover {
+  background: #596e6b;
+  color: #e3ddd9;
+}
+body .shop-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 30px 110px 120px 25px 30px 30px;
+  gap: 10px;
+  padding: 25px;
+  justify-content: center;
+  align-content: center;
+}
+body .shop-container .tamaños {
+  color: #596e6b;
+  background: #e3ddd9;
+  font-weight: 300;
+  font-size: medium;
+  border: 0;
+}
+body .shop-container .colores {
+  color: #596e6b;
+  background: #e3ddd9;
+  font-weight: 300;
+  font-size: medium;
+  border: 0;
+}
+body .shop-container .comprar_ahora {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  width: 150px;
+  height: 30px;
+  color: #596e6b;
+  background: #e3ddd9;
+  font-weight: 600;
+  border: 0;
+  border-radius: 6px;
+}
+body .shop-container .comprar_ahora:hover {
+  background: #596e6b;
+  color: #e3ddd9;
+}
+body .shop-container .agregar_carrito {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  width: 220px;
+  height: 30px;
+  color: #596e6b;
+  background: #e3ddd9;
+  font-weight: 600;
+  border: 0;
+  border-radius: 6px;
+}
+body .shop-container .agregar_carrito:hover {
+  background: #596e6b;
+  color: #e3ddd9;
+}
+body .shop-container .item-sh.uno {
+  justify-self: center;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+body .shop-container .item-sh.uno1 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+body .shop-container .item-sh.uno2 {
+  justify-self: center;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+body .shop-container .item-sh.dos {
+  justify-self: center;
+  align-self: center;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+body .shop-container .item-sh.tres {
+  justify-self: center;
+  align-self: center;
+  padding: 5px;
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+body .shop-container .item-sh.tres1 {
+  justify-self: center;
+  align-self: center;
+  padding: 5px;
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+body .shop-container .item-sh.cuatro {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body .shop-container .item-sh.cuatro1 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body .shop-container .item-sh.cuatro2 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+body .shop-container .item-sh.cinco {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+body .shop-container .item-sh.seis {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+body .shop-container .item-sh.seis1 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+body .shop-container .item-sh.siete {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+body .shop-container .item-sh.siete1 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+body .shop-container .item-sh.siete2 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+body .shop-container .item-sh.ocho {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+body .shop-container .item-sh.nueve {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+body .shop-container .item-sh.nueve1 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+body .shop-container .item-sh.diez {
+  justify-self: center;
+  align-self: center;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+body .shop-container .item-sh.diez1 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+body .shop-container .item-sh.diez2 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+body .shop-container .item-sh.once {
+  justify-self: center;
+  align-self: center;
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+body .shop-container .item-sh.doce {
+  justify-self: center;
+  align-self: center;
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+body .shop-container .item-sh.doce1 {
+  justify-self: center;
+  align-self: center;
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+
+@media (min-width: 390px) {
+  body header {
+    background-color: #DDD5D0;
+    display: flex;
+    align-self: start;
+  }
+  body header nav {
+    background-color: #DDD5D0;
+    width: 100%;
+    height: 70px;
+    padding: 2px;
+    display: inline-flex;
+    box-shadow: 10px 5px 5px grey;
+    justify-content: space-around;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    margin-top: 0px;
+    align-self: start;
+  }
+  body header nav ul {
+    color: #cfc0bd;
+    list-style-type: none;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: small;
+    align-content: center;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px;
+  }
+  body header nav ul .boton_shop {
+    display: inline-flex;
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+  body header nav ul .boton_shop button {
+    color: #7f9183;
+    width: 55px;
+    height: 25px;
+    background: #cfc0bd;
+    border: 0;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+  }
+  body header nav ul .boton_shop button:hover {
+    color: #aca19f;
+    background: #596e6b;
+  }
+  body header nav ul li {
+    display: inline;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+  }
+  body header nav ul li a {
+    padding: 8px;
+    color: #7f9183;
+    text-decoration: none;
+  }
+  body header nav ul li a:hover {
+    color: #596e6b;
+  }
+  body header nav ul li .logojb {
+    align-content: center;
+    display: inline;
+    width: 25px;
+  }
+  body header nav ul li .buscador .busqueda {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 20px;
+    color: #596f6b;
+    background: #DDD5D0;
+    cursor: text;
+  }
+  body header nav ul li .buscador .boton_buscar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    width: 40px;
+    height: 20px;
+    color: #596f6b;
+    background: #DDD5D0;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  body header nav ul li .buscador .boton_buscar:hover {
+    background: #596f6b;
+    color: #DDD5D0;
+  }
+  body footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #b8b8aa;
+    height: 50px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-self: baseline;
+  }
+  body footer .redes {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    align-items: center;
+  }
+  body footer .redes .instagram, body footer .redes .facebook, body footer .redes .youtube, body footer .redes .behance, body footer .redes .linkedin {
+    width: auto;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  body h1 {
+    color: #596e6b;
+    margin-top: 80px;
+    text-align: center;
+    padding: 10px;
+  }
+  body .body-inicio .parrafoprinc {
+    font-size: medium;
+  }
+  body .body-inicio .galeria {
+    padding: 16px;
+  }
+  body .body-inicio .galeria .img_princ img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  body .body-inicio .galeria .lista-imagenes {
+    display: flex;
+    overflow: auto;
+    margin-top: 10px;
+    cursor: all-scroll;
+  }
+  body .body-inicio .galeria .lista-imagenes img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    display: block;
+  }
+  body .grid-container {
+    display: grid;
+    grid-template-columns: 10px 300px 10px;
+    grid-template-rows: 300px 300px;
+    padding: 15px;
+    justify-content: center;
+    height: 525px;
+    gap: 20px;
+  }
+  body .grid-container .grid-item.uno {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  body .grid-container .grid-item.uno .jose {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  body .grid-container .grid-item.dos {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  body .grid-container .grid-item.dos p {
+    color: #596e6b;
+    font-family: "Courier New", Courier, monospace;
+    padding: 2px;
+    font-size: large;
+  }
+  body .servicios-container {
+    display: grid;
+    grid-template-columns: 50px 200px 50px;
+    grid-template-rows: 230px 230px 300px;
+    gap: 15px;
+    padding: 15px;
+    height: 790px;
+    justify-content: center;
+    align-content: center;
+  }
+  body .servicios-container .item-s.uno {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .servicios-container .item-s.dos {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  body .servicios-container .item-s.tres {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  body .materiales-container {
+    display: grid;
+    grid-template-columns: 25px 300px 25px;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 15px;
+    padding: 15px;
+    height: 1045px;
+    justify-content: center;
+    align-content: center;
+  }
+  body .materiales-container .item-m.uno {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: center;
+  }
+  body .materiales-container .item-m.dos {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    align-self: center;
+  }
+  body .materiales-container .item-m.tres {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    align-self: center;
+  }
+  body .materiales-container .item-m.cuatro {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+    align-self: center;
+  }
+  body .contacto-container {
+    display: grid;
+    grid-template-columns: 70px 300px 70px;
+    grid-template-rows: 200px 200px 40px 50px;
+    gap: 15px;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+  }
+  body .contacto-container .mapa {
+    width: 400px;
+    height: 200px;
+  }
+  body .contacto-container .texto_form {
+    height: 110px;
+  }
+  body .contacto-container .nombre_form, body .contacto-container .email_form, body .contacto-container .motivo_form, body .contacto-container .texto_form {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    box-sizing: border-box;
+    padding: 5px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    width: 300px;
+    cursor: text;
+  }
+  body .contacto-container .archivo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    color: #596e6b;
+    font-weight: 600;
+  }
+  body .contacto-container .adjuntar_archivo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    color: #596e6b;
+    font-weight: 600;
+  }
+  body .contacto-container .enviar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    width: 69px;
+    height: 20px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  body .contacto-container .borrar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    width: 110px;
+    height: 20px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  body .contacto-container .item-c.uno {
+    justify-self: center;
+    align-self: start;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  body .contacto-container .item-c.dos {
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  body .contacto-container .item-c.tres {
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  body .contacto-container .item-c.cuatro {
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  body .shop-container {
+    display: grid;
+    grid-template-columns: 50px 300px 50px;
+    grid-template-rows: 30px 200px 120px 25px 30px 50px 30px 200px 120px 25px 30px 50px 30px 200px 120px 25px 30px 50px;
+    gap: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-content: center;
+    height: 1545px;
+  }
+  body .shop-container .item-sh.uno {
+    justify-self: center;
+    text-align: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  body .shop-container .item-sh.uno1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  body .shop-container .item-sh.uno2 {
+    justify-self: center;
+    text-align: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  body .shop-container .item-sh.dos {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  body .shop-container .item-sh.tres {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  body .shop-container .item-sh.tres1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  body .shop-container .item-sh.cuatro {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+  body .shop-container .item-sh.cuatro1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+  body .shop-container .item-sh.cuatro2 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 9/10;
+  }
+  body .shop-container .item-sh.cinco {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 10/11;
+  }
+  body .shop-container .item-sh.seis {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 11/12;
+  }
+  body .shop-container .item-sh.seis1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 12/13;
+  }
+  body .shop-container .item-sh.siete {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 13/14;
+  }
+  body .shop-container .item-sh.siete1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 14/15;
+  }
+  body .shop-container .item-sh.siete2 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 15/16;
+  }
+  body .shop-container .item-sh.ocho {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 16/17;
+  }
+  body .shop-container .item-sh.nueve {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 17/18;
+  }
+  body .shop-container .item-sh.nueve1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 18/19;
+  }
+}
+@media (min-width: 670px) {
+  .nav {
+    background-color: #DDD5D0;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    display: inline-flex;
+    box-shadow: 10px 5px 5px grey;
+    justify-content: space-around;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+  }
+  .nav ul {
+    list-style-type: none;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: medium;
+    align-content: center;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+  }
+  .nav ul .boton_shop {
+    display: inline-flex;
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+  .nav ul .boton_shop button {
+    color: #7f9183;
+    width: 80px;
+    height: 40px;
+    background: #cfc0bd;
+    border: 0;
+    border-radius: 10px;
+    font-size: medium;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+  }
+  .nav ul .boton_shop button:hover {
+    color: #aca19f;
+    background: #596e6b;
+  }
+  .nav ul li {
+    display: inline;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+  }
+  .nav ul li a {
+    padding: 10px;
+    color: #7F9183;
+    text-decoration: none;
+  }
+  .nav ul li a:hover {
+    color: #596f6b;
+  }
+  .nav ul li .logojb {
+    align-content: center;
+    display: inline;
+    width: 45px;
+  }
+  .body-inicio .parrafoprinc {
+    color: #596e6b;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 500;
+  }
+  .body-inicio .galeria {
+    padding: 16px;
+  }
+  .body-inicio .galeria .img_princ img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .body-inicio .galeria .lista-imagenes {
+    display: flex;
+    overflow: auto;
+    margin-top: 10px;
+    cursor: all-scroll;
+  }
+  .body-inicio .galeria .lista-imagenes img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 350px;
+    height: 350px;
+    margin-right: 10px;
+    display: block;
+  }
+  h3, h4 {
+    font-family: "Courier New", Courier, monospace;
+    color: #596e6b;
+    padding: 10px;
+  }
+  h1 {
+    color: #596e6b;
+    margin-top: 90px;
+    text-align: center;
+    padding: 10px;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #b8b8aa;
+    height: 50px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-self: baseline;
+  }
+  footer .redes {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    align-items: center;
+  }
+  footer .redes .instagram, footer .redes .facebook, footer .redes .youtube, footer .redes .behance, footer .redes .linkedin {
+    width: auto;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50px 200px 50px;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
+  }
+  .grid-container .grid-item.uno {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .grid-container .grid-item.uno .jose {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .grid-container .grid-item.dos {
+    justify-self: center;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  .servicios-container {
+    display: grid;
+    grid-template-columns: 50px 200px 50px;
+    grid-template-rows: 230px 230px 300px;
+    gap: 15px;
+    padding: 15px;
+    height: 790px;
+    justify-content: center;
+    align-content: center;
+  }
+  .servicios-container .item-s.uno {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .servicios-container .item-s.dos {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  .servicios-container .item-s.tres {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .materiales-container {
+    display: grid;
+    grid-template-columns: 25px 300px 25px;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 15px;
+    padding: 15px;
+    height: 1045px;
+    justify-content: center;
+    align-content: center;
+  }
+  .materiales-container .item-m.uno {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: center;
+  }
+  .materiales-container .item-m.dos {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    align-self: center;
+  }
+  .materiales-container .item-m.tres {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    align-self: center;
+  }
+  .materiales-container .item-m.cuatro {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+    align-self: center;
+  }
+  .contacto-container {
+    display: grid;
+    grid-template-columns: 70px 300px 70px;
+    grid-template-rows: 200px 200px 40px 50px;
+    gap: 15px;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+  }
+  .contacto-container .mapa {
+    width: 400px;
+    height: 200px;
+  }
+  .contacto-container .nombre_form, .contacto-container .email_form, .contacto-container .motivo_form, .contacto-container .texto_form {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    box-sizing: border-box;
+    padding: 5px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    width: 300px;
+    cursor: text;
+  }
+  .contacto-container .texto_form {
+    height: 110px;
+  }
+  .contacto-container .archivo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    color: #596e6b;
+    font-weight: 600;
+  }
+  .contacto-container .adjuntar_archivo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    color: #596e6b;
+    font-weight: 600;
+  }
+  .contacto-container .enviar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    width: 69px;
+    height: 20px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  .contacto-container .borrar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    width: 110px;
+    height: 20px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  .contacto-container .item-c.uno {
+    justify-self: center;
+    align-self: start;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .contacto-container .item-c.dos {
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .contacto-container .item-c.tres {
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .contacto-container .item-c.cuatro {
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .shop-container {
+    display: grid;
+    grid-template-columns: 50px 300px 50px;
+    grid-template-rows: 30px 110px 120px 25px 30px 50px 30px 110px 120px 25px 30px 50px 30px 110px 120px 25px 30px 50px 30px 110px 120px 25px 30px 50px;
+    gap: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-content: center;
+  }
+  .shop-container .item-sh.uno {
+    justify-self: center;
+    text-align: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .shop-container .item-sh.uno1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .shop-container .item-sh.uno2 {
+    justify-self: center;
+    text-align: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .shop-container .item-sh.dos {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .shop-container .item-sh.tres {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .shop-container .item-sh.tres1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .shop-container .item-sh.cuatro {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+  .shop-container .item-sh.cuatro1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+  .shop-container .item-sh.cuatro2 {
+    justify-content: start;
+    align-content: start;
+    text-align: start;
+    grid-column: 2/3;
+    grid-row: 9/10;
+  }
+  .shop-container .item-sh.cinco {
+    justify-self: baseline;
+    align-self: baseline;
+    grid-column: 2/3;
+    grid-row: 10/11;
+  }
+  .shop-container .item-sh.seis {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 11/12;
+  }
+  .shop-container .item-sh.seis1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 12/13;
+  }
+  .shop-container .item-sh.siete {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 13/14;
+  }
+  .shop-container .item-sh.siete1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 14/15;
+  }
+  .shop-container .item-sh.siete2 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 15/16;
+  }
+  .shop-container .item-sh.ocho {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 16/17;
+  }
+  .shop-container .item-sh.nueve {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 17/18;
+  }
+  .shop-container .item-sh.nueve1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 18/19;
+  }
+}
+@media (min-width: 1240px) {
+  body {
+    background-color: #cfc0bd;
+  }
+  body header {
+    background-color: #DDD5D0;
+    display: flex;
+    align-self: start;
+  }
+  body header nav {
+    background-color: #DDD5D0;
+    width: 100%;
+    height: 70px;
+    display: inline-flex;
+    box-shadow: 10px 5px 5px grey;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+  }
+  body header nav ul {
+    color: #7F9183;
+    list-style-type: none;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: large;
+    align-content: center;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+  }
+  body header nav ul .boton_shop {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+  body header nav ul .boton_shop button {
+    color: #7F9183;
+    width: 90px;
+    height: 40px;
+    background: #cfc0bd;
+    border: 0;
+    border-radius: 10px;
+    font-size: medium;
+    transition: 0.5s;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+  }
+  body header nav ul .boton_shop button:hover {
+    color: #596f6b;
+    background: #cfc0bd;
+  }
+  body header nav ul li {
+    display: inline;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+  }
+  body header nav ul li a {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #7F9183;
+    text-decoration: none;
+    font-size: large;
+  }
+  body header nav ul li a:hover {
+    color: #596f6b;
+  }
+  body header nav ul li .logojb {
+    align-content: center;
+    display: inline;
+    width: 70px;
+  }
+  body h1 {
+    color: #596f6b;
+    text-align: center;
+    padding: 10px;
+  }
+  body p {
+    color: #596e6b;
+    font-family: "Courier New", Courier, monospace;
+    padding: 2px;
+  }
+  body .body-inicio .parrafoprinc {
+    color: #596e6b;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: x-large;
+    font-weight: 500;
+  }
+  body .body-inicio .galeria {
+    padding: 16px;
+  }
+  body .body-inicio .galeria .img_princ img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  body .body-inicio .galeria .lista-imagenes {
+    display: flex;
+    overflow: auto;
+    margin-top: 10px;
+    cursor: all-scroll;
+  }
+  body .body-inicio .galeria .lista-imagenes img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 400px;
+    height: 400px;
+    margin-right: 10px;
+    display: block;
+  }
+  body footer {
+    padding: 10px;
+    background-color: #b8b8aa;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-self: baseline;
+  }
+  body footer .redes {
+    list-style-type: none;
+    display: inline;
+  }
+  body footer .redes .instagram, body footer .redes .facebook, body footer .redes .youtube, body footer .redes .behance, body footer .redes .linkedin {
+    width: auto;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body form {
+    text-align: end;
+  }
+  body h1 {
+    color: #596f6b;
+    margin-top: 90px;
+    text-align: center;
+    padding: 10px;
+  }
+  body h3, body h4 {
+    font-family: "Courier New", Courier, monospace;
+    color: #596e6b;
+    padding: 10px;
+  }
+  body .img_extra {
+    width: 200px;
+    border-radius: 20px;
+  }
+  body .grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 130px 200px 130px;
+    gap: 20px;
+    height: 600px;
+    padding: 15px;
+    justify-items: center;
+  }
+  body .grid-container .grid-item.uno {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+  }
+  body .grid-container .grid-item.uno .jose {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  body .grid-container .grid-item.dos {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  body .grid-container .grid-item.dos p {
+    color: #596e6b;
+    font-family: "Courier New", Courier, monospace;
+    padding: 2px;
+    font-size: large;
+  }
+  body .servicios-container {
+    display: grid;
+    grid-template-columns: 50px 250px 240px 250px 50px;
+    grid-template-rows: 250px 50px;
+    gap: 30px;
+    height: 315px;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+  }
+  body .servicios-container .item-s.uno {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .servicios-container .item-s.dos {
+    justify-self: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .servicios-container .item-s.tres {
+    justify-self: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .materiales-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 30px;
+    height: 700px;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+  }
+  body .materiales-container .item-m.uno {
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .materiales-container .item-m.dos {
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .materiales-container .item-m.tres {
+    justify-self: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .materiales-container .item-m.cuatro {
+    justify-self: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    text-align: center;
+  }
+  body .contacto-container {
+    display: grid;
+    grid-template-columns: 300px 300px 400px;
+    grid-template-rows: 300px 50px 50px;
+    gap: 20px;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+  }
+  body .contacto-container .item-c.uno {
+    justify-self: center;
+    align-self: start;
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  body .contacto-container .item-c.uno .mapa {
+    width: 620px;
+    height: 420px;
+  }
+  body .contacto-container .texto_form {
+    height: 200px;
+  }
+  body .contacto-container .item-c.dos {
+    justify-self: start;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  body .contacto-container .item-c.dos .nombre_form, body .contacto-container .item-c.dos .email_form, body .contacto-container .item-c.dos .motivo_form, body .contacto-container .item-c.dos .texto_form {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 5px;
+    color: #596f6b;
+    background: #DDD5D0;
+    font-weight: 600;
+    width: 402px;
+    cursor: text;
+  }
+  body .contacto-container .item-c.dos textarea {
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    cursor: text;
+  }
+  body .contacto-container .item-c.tres {
+    justify-self: start;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  body .contacto-container .item-c.tres .archivo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    color: #596f6b;
+    font-weight: 600;
+  }
+  body .contacto-container .item-c.tres .adjuntar_archivo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    color: #596f6b;
+    font-weight: 600;
+  }
+  body .contacto-container .item-c.cuatro {
+    justify-self: start;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  body .contacto-container .item-c.cuatro .enviar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    width: 80px;
+    height: 30px;
+    color: #596f6b;
+    background: #DDD5D0;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  body .contacto-container .item-c.cuatro .enviar:hover {
+    background: #596f6b;
+    color: #DDD5D0;
+  }
+  body .contacto-container .item-c.cuatro .borrar {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    width: 130px;
+    height: 30px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  body .contacto-container .item-c.cuatro .borrar:hover {
+    background: #596e6b;
+    color: #e3ddd9;
+  }
+  body .shop-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 30px 200px 120px 25px 30px 30px;
+    gap: 10px;
+    padding: 25px;
+    height: 485px;
+    justify-content: center;
+    align-content: center;
+  }
+  body .shop-container .tamaños {
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 300;
+    font-size: medium;
+    border: 0;
+  }
+  body .shop-container .colores {
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 300;
+    font-size: medium;
+    border: 0;
+  }
+  body .shop-container .comprar_ahora {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    width: 150px;
+    height: 30px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  body .shop-container .comprar_ahora:hover {
+    background: #596e6b;
+    color: #e3ddd9;
+  }
+  body .shop-container .agregar_carrito {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    width: 220px;
+    height: 30px;
+    color: #596e6b;
+    background: #e3ddd9;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+  }
+  body .shop-container .agregar_carrito:hover {
+    background: #596e6b;
+    color: #e3ddd9;
+  }
+  body .shop-container .item-sh.uno {
+    justify-self: center;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body .shop-container .item-sh.uno1 {
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  body .shop-container .item-sh.uno2 {
+    justify-self: center;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  body .shop-container .item-sh.dos {
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  body .shop-container .item-sh.tres {
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  body .shop-container .item-sh.tres1 {
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  body .shop-container .item-sh.cuatro {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  body .shop-container .item-sh.cuatro1 {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  body .shop-container .item-sh.cuatro2 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  body .shop-container .item-sh.cinco {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  body .shop-container .item-sh.seis {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  body .shop-container .item-sh.seis1 {
+    justify-self: center;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  body .shop-container .item-sh.siete {
+    justify-self: center;
+    align-self: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  body .shop-container .item-sh.siete1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  body .shop-container .item-sh.siete2 {
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  body .shop-container .item-sh.ocho {
+    justify-self: center;
+    align-self: center;
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+  body .shop-container .item-sh.nueve {
+    justify-self: center;
+    align-self: center;
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+  body .shop-container .item-sh.nueve1 {
+    justify-self: center;
+    align-self: center;
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+}/*# sourceMappingURL=main.css.map */
